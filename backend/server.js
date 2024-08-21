@@ -13,8 +13,8 @@ const port = process.env.PORT || 5000;
 const corsOptions = {
     origin: 'http://localhost:3000',
     credentials: true,
-  };
-  app.use(cors(corsOptions));
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
@@ -32,17 +32,23 @@ const transporter = nodemailer.createTransport({
 app.post('/send-email', (req, res) => {
     const { first_name, last_name, email, phone_number, message } = req.body;
 
-    // Email options
+    // Email options with styled HTML
     const mailOptions = {
         from: "clear.tech11@gmail.com",
         to: "clear.tech11@gmail.com", // Replace with your email
         subject: 'New Contact Form Submission',
-        text: `
-            First Name: ${first_name}\n
-            Last Name: ${last_name}\n
-            Email: ${email}\n
-            Phone: ${phone_number}\n
-            Message: ${message}
+        html: `
+            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+                <h3 style="color: #4CAF50; text-align: center;">New Contact Form Submission</h3>
+                <p style="color: #333; font-size: 1.1em;">You have received a new contact form submission. Here are the details:</p>
+                <div style="background-color: #fff; padding: 15px; border-radius: 8px; border: 1px solid #ddd; margin: 20px 0;">
+                    <p style="color: #333; font-size: 1.1em;"><strong>First Name:</strong> ${first_name}</p>
+                    <p style="color: #333; font-size: 1.1em;"><strong>Last Name:</strong> ${last_name}</p>
+                    <p style="color: #333; font-size: 1.1em;"><strong>Email:</strong> ${email}</p>
+                    <p style="color: #333; font-size: 1.1em;"><strong>Phone Number:</strong> ${phone_number}</p>
+                    <p style="color: #333; font-size: 1.1em;"><strong>Message:</strong> ${message}</p>
+                </div>
+            </div>
         `
     };
 
