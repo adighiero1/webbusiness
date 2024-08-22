@@ -52,6 +52,19 @@ app.post('/send-email', (req, res) => {
         `
     };
 
+    const sentmailOptions={
+        from: "clear.tech11@gmail.com",
+        to: email, // Replace with your email
+        subject: 'New Contact Form Submission',
+        html: `
+            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+                <h3 style="color: #4CAF50; text-align: center;">Message sent</h3>
+                <p style="color: #333; font-size: 1.1em;">Your message has been sent succesfully! </p>
+                <p style="color: #333; font-size: 1.1em;">We will contact you very soon! </p>
+            </div>
+        `
+    };
+
     // Send email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
@@ -61,6 +74,17 @@ app.post('/send-email', (req, res) => {
         console.log('Email sent:', info.response);
         res.status(200).json({ message: 'Email sent successfully' });
     });
+
+    transporter.sendMail(sentmailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email:', error);
+            return res.status(500).json({ message: 'Failed to send email' });
+        }
+        console.log('Email sent:', info.response);
+    });
+
+    // Clear form fields
+    req.body = {};
 });
 
 // Start the server
