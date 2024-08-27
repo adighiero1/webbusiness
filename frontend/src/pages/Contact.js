@@ -80,7 +80,7 @@ const Contact = () => {
         <form onSubmit={sendEmail}>
             <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-lg shadow-lg">
                 <div className="flex justify-center">
-                    <h1 className="font-semibold text-center text-gray-700 uppercase text-3xl">Get in Touch</h1>
+                    <h1 className="font-semibold text-center text-gray-700 uppercase text-3xl">Póngase en Contacto</h1>
                 </div>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mt-6">
                     <div>
@@ -88,7 +88,7 @@ const Contact = () => {
                             name="first_name"
                             className="w-full bg-gray-100 text-gray-800 mt-2 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                             type="text"
-                            placeholder="First Name*"
+                            placeholder="Nombre*"
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
                             onKeyUp={clearErrors}
@@ -102,7 +102,7 @@ const Contact = () => {
                             name="last_name"
                             className="w-full bg-gray-100 text-gray-800 mt-2 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                             type="text"
-                            placeholder="Last Name*"
+                            placeholder="Apellido*"
                             value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
                             onKeyUp={clearErrors}
@@ -130,7 +130,7 @@ const Contact = () => {
                             name="phone_number"
                             className="w-full bg-gray-100 text-gray-800 mt-2 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                             type="number"
-                            placeholder="Phone*"
+                            placeholder="Teléfono*"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                             onKeyUp={clearErrors}
@@ -143,7 +143,7 @@ const Contact = () => {
                 <div className="my-6">
                     <textarea
                         name="message"
-                        placeholder="Your Message*"
+                        placeholder="Su mensaje*"
                         className="w-full h-32 bg-gray-100 text-gray-800 mt-2 p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
@@ -155,12 +155,12 @@ const Contact = () => {
                 </div>
                 <div className="my-4 w-full lg:w-1/3">
                     <button type="submit" id="submitBtn" className="uppercase text-sm font-bold tracking-wide bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        Send Message
+                    Enviar Mensaje
                     </button>
                 </div>
             </div>
         </form>
-        <div className="w-full lg:w-2/6 px-8 py-6 ml-auto bg-gray-800 rounded-lg mt-8 lg:-mt-96">
+        {/* <div className="w-full lg:w-2/6 px-8 py-6 ml-auto bg-gray-800 rounded-lg mt-8 lg:-mt-96">
             <div className="flex flex-col text-white">
                 <div className="flex my-4 w-full">
                     <div className="flex flex-col">
@@ -189,7 +189,7 @@ const Contact = () => {
                                 </a>
                             </div>
             </div>
-        </div>
+        </div> */}
     </div>
 </div>
 

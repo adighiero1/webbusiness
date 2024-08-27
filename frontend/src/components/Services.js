@@ -9,12 +9,12 @@ const Services = () => {
         <div id="services" className="bg-gray-100 py-12">
             <section data-aos="zoom-in-down">
                 <div className="my-4 py-4">
-                    <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">services</h2>
+                    <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">servicios</h2>
                     <div className='flex justify-center'>
                         <div className='w-24 border-b-4 border-blue-900'></div>
                     </div>
                     <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-blue-900">
-                        We are deeply committed to the growth and success of our clients.
+                    Estamos comprometidos con el crecimiento y éxito de nuestros clientes.
                     </h2>
                 </div>
 
@@ -30,9 +30,9 @@ const Services = () => {
             style={{ width: '300px', height: '300px' }}
         />
     </div>
-    <h2 className="font-semibold my-4 text-2xl text-center">Web Development</h2>
+    <h2 className="font-semibold my-4 text-2xl text-center">Desarrollo Web</h2>
     <p className="text-md font-medium text-center">
-        We specialize in creating and optimizing high-quality, custom websites for businesses and organizations of all sizes. Building mobile-friendly and easy-to-use websites and applications for clients.
+    Nos especializamos en crear y optimizar sitios web personalizados de alta calidad para empresas y organizaciones de todos los tamaños. Construimos sitios web y aplicaciones móviles amigables y fáciles de usar para nuestros clientes.
     </p>
 </div>
 
@@ -40,9 +40,9 @@ const Services = () => {
                         <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                             <div className="m-2 text-center text-sm">
                                 <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img3} />
-                                <h2 className="font-semibold my-4 text-2xl">Domain and Hosting Services</h2>
+                                <h2 className="font-semibold my-4 text-2xl">Servicios de Dominio y Alojamiento</h2>
                                 <p className="text-md font-medium">
-                                    We provide domain registration and web hosting services to individuals and organizations to enable them gain visibility in the digital space.
+                                Proporcionamos servicios de registro de dominios y alojamiento web a empresas y organizaciones para permitirles ganar visibilidad en el espacio digital.
                                 </p>
                             </div>
                         </div>
@@ -50,9 +50,9 @@ const Services = () => {
                         <div className="bg-white transition-all ease-in-out duration-400 overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                             <div className="m-2 text-center text-sm">
                                 <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img4} />
-                                <h2 className="font-semibold my-4 text-2xl">General IT Consultations</h2>
+                                <h2 className="font-semibold my-4 text-2xl">Consultoría General </h2>
                                 <p className="text-md font-medium">
-                                    Our IT consultations service provides expert guidance and support for businesses and individuals looking to optimize their technology solutions.
+                                Nuestro servicio de consultoría en TI ofrece orientación y apoyo experto a empresas e individuos que buscan optimizar sus soluciones tecnológicas.
                                 </p>
                             </div>
                         </div>
@@ -70,10 +70,10 @@ const Services = () => {
                                     <path d="M12 7.462c-2.502 0-4.538 2.036-4.538 4.538S9.498 16.538 12 16.538s4.538-2.036 4.538-4.538S14.502 7.462 12 7.462zm0 7.076c-1.399 0-2.538-1.139-2.538-2.538S10.601 9.462 12 9.462s2.538 1.139 2.538 2.538-1.139 2.538-2.538 2.538z"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-3xl text-blue-900 font-bold">We <span className='font-black'>Build</span></h3>
+                            <h3 className="text-3xl text-blue-900 font-bold">Nosotros <span className='font-black'>Construimos</span></h3>
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold'>
-                                    With many projects under our belt, we provide custom solutions to your business needs while helping reduce cost and maximize efficiency, no matter the scope and size of your project.
+                                Con una amplia experiencia en diversos proyectos, brindamos soluciones a medida para las necesidades de su negocio, ayudando a reducir costos y maximizar la eficiencia, sin importar el tamaño o la complejidad del proyecto.
                                 </p>
                             </div>
                         </div>
@@ -83,10 +83,10 @@ const Services = () => {
                                     <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-3xl text-blue-900 font-bold">We <span className='font-black'>Collaborate</span></h3>
+                            <h3 className="text-3xl text-blue-900 font-bold">Nosotros <span className='font-black'>Colaboramos</span></h3>
                             <div>
                                 <p className='my-3 text-xl text-gray-600 font-semibold'>
-                                We partner closely with you to ensure your project truly embodies your vision and objectives. By understanding your needs, we create innovative solutions that achieve impactful results. We do this by openly communicating with you throughout the development process.
+                                Trabajamos en colaboración con nuestros clientes para garantizar que su proyecto refleje fielmente su visión. Al comprender sus necesidades, desarrollamos soluciones innovadoras que generan resultados significativos. Mantenemos una comunicación continua y transparente a lo largo de todo el proceso de desarrollo.
                                 </p>
                             </div>
                         </div>
@@ -97,10 +97,10 @@ const Services = () => {
             <section className="bg-gray-100 py-12">
                 <div className="flex justify-center">
                     <div className="max-w-4xl text-center">
-                        <h2 className="text-3xl font-bold text-blue-900 mb-6">Why Choose Us?</h2>
+                        <h2 className="text-3xl font-bold text-blue-900 mb-6">¿Por qué elegirnos?</h2>
                         <p className="text-lg text-gray-700">
-                        We consistently deliver top-notch, dependable IT solutions tailored to the specific needs of our clients. Whether you’re a small business or a large enterprise, our expertise and experience drive your success.
-                        </p>
+                        Ofrecemos soluciones de TI de primera calidad y confiables, diseñadas específicamente para satisfacer las necesidades de nuestros clientes. Tanto si es una pequeña empresa como una gran corporación, nuestra experiencia y conocimiento impulsan su éxito.                        
+ </p>
                     </div>
                 </div>
             </section>

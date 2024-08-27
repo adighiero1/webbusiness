@@ -34,16 +34,16 @@ const Footer = () => {
 
                     {/* 3rd block */}
                     <div className="col-span-6 md:col-span-6 lg:col-span-4 ">
-                        <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>
+                        <h6 className="text-[#013289] text-xl font-bold mb-4">NUESTROS SERVICIOS</h6>
                         <ul className="text-md">
                         <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Web Development</Link>
+                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Desarrollo Web</Link>
                         </li>
                         <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Domain and Hosting</Link>
+                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Servicios de Dominio y Alojamiento</Link>
                         </li>
                         <li className="mb-2">
-                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">General IT Consultations</Link>
+                            <Link to="#" className="text-[#013289] hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Consultoría General</Link>
                         </li>
                         </ul>
                     </div>
@@ -51,11 +51,11 @@ const Footer = () => {
                     {/* 4th block */}
                     <div className="col-span-12 text-center lg:col-span-3 font-bold uppercase text-blue-900">
                         <div className="text-xl mb-6">
-                            Social Media Links.
+                        Enlaces de Redes Sociales
                         </div>
 
                                 <div className="text-md font-medium mb-6">
-                                    Follow us on social media.
+                                Síguenos en las redes sociales.
                                 </div>
                         <div className="mx-auto text-center mt-2">
                                 <ul className="flex justify-center mb-4 md:mb-0">
@@ -87,8 +87,8 @@ const Footer = () => {
                         to="#"
                         className=" hover:text-gray-900"
                     >
-                       ClearTech
-                    </HashLink>. All rights reserved.
+                       WiDu Web
+                    </HashLink>. Todos los derechos reservados
                     </div>
                 </div>
                 </div>
