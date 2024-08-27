@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
+import logo from '../images/widuheader.jpg'
 const Footer = () => {
     return (
         <>
@@ -9,19 +9,15 @@ const Footer = () => {
                 <div className="footer max-w-full mx-auto px-4 sm:px-6 bg-gray-100 border-t border-b py-30">
 
                     {/* Top area: Blocks */}
-                    <div className="grid sm:grid-cols-12 gap-5 py-8 md:py-12 border-t border-gray-200 lg:ml-11">
+                    <div className="flex flex-row items-center justify-around text-center">
 
                     {/* 1st block */}
                     <div className="col-span-12 lg:col-span-4">
-                        <div className="box-border border-b-4 border-blue-900 p-8 bg-gray-200 text-gray-600 text-center rounded-lg xl:w-80 mx-auto">
-                            <h3 className="font-bold text-4xl mb-4">Cleartech</h3>
-                            <div className='text-md font-medium text-gray-600'>
-                            </div>
-                        </div>
+                        <img alt="card img" className="rounded-t float-right duration-1000 w-72" src={logo} /> 
                     </div>
-
+                    
                     {/* 2nd block */}
-                    <div className="col-span-6 md:col-span-6 lg:col-span-1 ml-7 mx-auto">
+                    <div className="col-span-6 md:col-span-6 lg:col-span-1 ">
                         <h6 className="text-[#013289] text-xl font-bold mb-4">LINKS</h6>
                         <ul className="text-md">
                         <li className="mb-2">
@@ -37,7 +33,7 @@ const Footer = () => {
                     </div>
 
                     {/* 3rd block */}
-                    <div className="col-span-6 md:col-span-6 lg:col-span-4 mx-auto">
+                    <div className="col-span-6 md:col-span-6 lg:col-span-4 ">
                         <h6 className="text-[#013289] text-xl font-bold mb-4">OUR SERVICES</h6>
                         <ul className="text-md">
                         <li className="mb-2">
@@ -53,7 +49,7 @@ const Footer = () => {
                     </div>
 
                     {/* 4th block */}
-                    <div className="col-span-12 text-center mx-auto lg:col-span-3 font-bold uppercase text-blue-900">
+                    <div className="col-span-12 text-center lg:col-span-3 font-bold uppercase text-blue-900">
                         <div className="text-xl mb-6">
                             Social Media Links.
                         </div>
