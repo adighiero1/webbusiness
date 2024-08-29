@@ -113,7 +113,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use('/images', express.static(path.join(__dirname, 'images')));
 const transporter = nodemailer.createTransport({
     host: 'c2670112.ferozo.com',
     port: 465,
@@ -152,11 +152,17 @@ app.post('/send-email', (req, res) => {
         to: email, // Client's email
         subject: 'Message Sent',
         html: `
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-                <h3 style="color: #4CAF50; text-align: center;">Message Sent</h3>
-                <p style="color: #333; font-size: 1.1em;">Your message has been sent successfully!</p>
-                <p style="color: #333; font-size: 1.1em;">We will contact you very soon!</p>
-            </div>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+        <h3 style="color: #4CAF50; text-align: center;">Mensaje Enviado</h3>
+        <p style="color: #333; font-size: 1.1em;">¡Tu mensaje ha sido enviado con éxito!</p>
+        <p style="color: #333; font-size: 1.1em;">¡Nos pondremos en contacto contigo muy pronto!</p>
+        
+        <!-- Footer with logo -->
+        <div style="text-align: center; margin-top: 20px;">
+            <img src=""http://localhost:5000/images/widuheader.jpg" alt="Logo" style="max-width: 150px; margin-top: 20px;">
+            <p style="color: #777; font-size: 0.9em; margin-top: 10px;">Gracias por contactarnos</p>
+        </div>
+    </div>
         `
     };
 
