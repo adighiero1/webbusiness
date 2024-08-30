@@ -77,8 +77,8 @@ const Contact = () => {
             </div>
             <div id='contact' className="flex justify-center items-center mt-8 w-full bg-gray-50 py-12 lg:py-24">
     <div className="container mx-auto my-8 px-4 lg:px-20">
-        <form onSubmit={sendEmail}>
-            <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-lg shadow-lg">
+        <form className="flex justify-center" onSubmit={sendEmail}>
+            <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 rounded-lg shadow-lg">
                 <div className="flex justify-center">
                     <h1 className="font-semibold text-center text-gray-700 uppercase text-3xl">Póngase en Contacto</h1>
                 </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                     }
                 </div>
                 <div className="my-4 w-full lg:w-1/3">
-                    <button type="submit" id="submitBtn" className="uppercase text-sm font-bold tracking-wide bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" id="submitBtn" className="uppercase text-sm  transition duration-300 ease-in-out font-bold tracking-wide bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
                     Enviar Mensaje
                     </button>
                 </div>

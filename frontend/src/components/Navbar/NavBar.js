@@ -40,7 +40,7 @@ const NavBar = () => {
                     <div className='hidden space-x-6 lg:inline-block p-5'>
                         <NavLinks />
                     </div>
-                    <div className={` bg-black mt-4 opcacity-100 fixed transition-all duration-300 ease-in-out flex justify-center left-0 w-full h-auto rounded-md p-6 bg-white lg:hidden shadow-xl top-14 ${isOpen ? "block" : "hidden"}`}>
+                    <div className={`mt-4 opcacity-100 fixed transition-all duration-300 ease-in-out flex justify-center left-0 w-full h-auto rounded-md p-6 bg-black lg:hidden shadow-xl top-14 ${isOpen ? "block" : "hidden"}`}>
                         <div className='flex flex-col items-center space-y-4'>
                             <NavLinks />
                         </div>
