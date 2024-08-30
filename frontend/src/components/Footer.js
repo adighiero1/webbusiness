@@ -21,13 +21,13 @@ const Footer = () => {
                             <h6 className="text-black text-xl font-bold mb-4">LINKS</h6>
                             <ul className="text-md">
                                 <li className="mb-2">
-                                    <HashLink to="#" className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">About</HashLink>
+                                    <HashLink to="#" className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Sobre Nosotros</HashLink>
                                 </li>
                                 <li className="mb-2">
-                                    <HashLink to="#" className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Services</HashLink>
+                                    <HashLink to="#" className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Servicios</HashLink>
                                 </li>
                                 <li className="mb-2">
-                                    <HashLink to="#" className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Contact</HashLink>
+                                    <HashLink to="#" className="text-black hover:text-gray-900 hover:tracking-wider transition duration-250 ease-in-out">Contáctenos</HashLink>
                                 </li>
                             </ul>
                         </div>
