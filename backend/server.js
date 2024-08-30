@@ -113,7 +113,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/images', express.static(path.join(__dirname, 'images')));
+
 const transporter = nodemailer.createTransport({
     host: 'c2670112.ferozo.com',
     port: 465,
@@ -159,7 +159,7 @@ app.post('/send-email', (req, res) => {
         
         <!-- Footer with logo -->
         <div style="text-align: center; margin-top: 20px;">
-            <img src=""http://localhost:5000/images/widuheader.jpg" alt="Logo" style="max-width: 150px; margin-top: 20px;">
+            
             <p style="color: #777; font-size: 0.9em; margin-top: 10px;">Gracias por contactarnos</p>
         </div>
     </div>
