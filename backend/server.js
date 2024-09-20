@@ -120,7 +120,7 @@ const transporter = nodemailer.createTransport({
     secure: true, // true for 465, false for other ports
     auth: {
         user: 'info@widuweb.com', // Your SMTP email
-        pass: 'AleAndresLauLuke24@/' // Your SMTP password
+        pass: 'S@nnicolas14' // Your SMTP password
     }
 });
 
